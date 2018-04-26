@@ -27,7 +27,7 @@ class Api::V1::ProductsController < ApplicationController
       product = Product.find(params[:id])
       product.destroy
 
-      render json: {message: "Producto borrado"}, status: 200
+      render json: {message: "Producto borrado"}, status: 204
     end
 
   private
